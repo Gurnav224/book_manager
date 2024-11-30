@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const apiUrl = 'http://localhost:3000';
+const apiUrl = 'https://book-manager-lovat.vercel.app';
 
 export const fetchBooks = createAsyncThunk("fetchBooks", async () => {
     const response = await axios.get(`${apiUrl}/books`);
