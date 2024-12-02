@@ -83,14 +83,16 @@ const BookForm = () => {
               <label className="form-label" htmlFor="genre">
                 Genre:
               </label>
-              <input
-                className="form-control"
-                type="text"
-                name="genre"
-                id="genre"
-                value={newBook.genre}
-                onChange={handleInputChange}
-              />
+             
+              <select className="form-select" onChange={handleInputChange} value={newBook.genre} name="genre" id="genre">
+                <option value="Horror">Horror</option>
+                <option value="Fiction">Fiction</option>
+                <option value="Adventure">Adeventure</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Historical">Historical</option>
+                <option value="Philosophy">Philosophy</option>
+                <option value="Mystery">Mystery</option>
+              </select>
             </div>
             <button className="btn btn-success" onClick={handleEditBookSubmit}>
               Update Book
@@ -133,14 +135,15 @@ const BookForm = () => {
               <label className="form-label" htmlFor="genre">
                 Genre:
               </label>
-              <input
-                className="form-control"
-                type="text"
-                name="genre"
-                id="genre"
-                value={newBook.genre}
-                onChange={handleInputChange}
-              />
+              <select className="form-select" onChange={handleInputChange} value={newBook.genre} name="genre" id="genre">
+                <option value="Horror">Horror</option>
+                <option value="Fiction">Fiction</option>
+                <option value="Adventure">Adeventure</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Historical">Historical</option>
+                <option value="Philosophy">Philosophy</option>
+                <option value="Mystery">Mystery</option>
+              </select>
             </div>
             <button className="btn btn-primary" onClick={handleSubmit}>
               Add Book
